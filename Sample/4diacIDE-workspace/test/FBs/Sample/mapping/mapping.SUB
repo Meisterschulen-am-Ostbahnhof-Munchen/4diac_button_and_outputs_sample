@@ -11,5 +11,16 @@
 		</SubAppEventInputs>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
+		<FB Name="Hutschienenmoped_3_DI" Type="Hutschienenmoped_3_DI" Comment="" x="1020.0" y="-560.0">
+			<Parameter Name="QI" Value="TRUE"/>
+			<Parameter Name="u8SAMember" Value="255"/>
+			<Parameter Name="u16ObjId" Value="65535"/>
+			<Parameter Name="DigitalInput_I1" Value="&quot;DigitalInput_I1&quot;"/>
+			<Parameter Name="DigitalInput_I2" Value="&quot;DigitalInput_I2&quot;"/>
+			<Parameter Name="DigitalInput_I3" Value="&quot;DigitalInput_I3&quot;"/>
+		</FB>
+		<EventConnections>
+			<Connection Source="INIT" Destination="Hutschienenmoped_3_DI.INIT" Comment="" dx1="1180.0"/>
+		</EventConnections>
 	</SubAppNetwork>
 </SubAppType>

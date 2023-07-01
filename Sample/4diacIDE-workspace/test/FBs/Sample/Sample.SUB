@@ -15,8 +15,11 @@
 			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
 			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
 		</SubApp>
+		<SubApp Name="ButtonFunc" Type="ButtonFunc" Comment="" x="453.33333333333337" y="-1580.0">
+		</SubApp>
 		<EventConnections>
 			<Connection Source="INIT" Destination="mapping.INIT" Comment="" dx1="80.0"/>
+			<Connection Source="INIT" Destination="ButtonFunc.INIT" Comment="" dx1="80.0"/>
 		</EventConnections>
 	</SubAppNetwork>
 </SubAppType>
