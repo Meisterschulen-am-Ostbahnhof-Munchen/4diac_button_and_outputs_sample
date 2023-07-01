@@ -20,10 +20,20 @@
 		<FB Name="DigitalInput_I3" Type="IX" Comment="" x="533.3333333333334" y="1366.6666666666667">
 			<Parameter Name="QI" Value="TRUE"/>
 		</FB>
+		<FB Name="AND_3" Type="AND_3" Comment="" x="2800.0" y="133.33333333333334">
+		</FB>
 		<EventConnections>
 			<Connection Source="INIT" Destination="DigitalInput_I1.INIT" Comment="" dx1="933.3333333333334"/>
 			<Connection Source="INIT" Destination="DigitalInput_I2.INIT" Comment="" dx1="933.3333333333334"/>
 			<Connection Source="INIT" Destination="DigitalInput_I3.INIT" Comment="" dx1="933.3333333333334"/>
+			<Connection Source="DigitalInput_I1.IND" Destination="AND_3.REQ" Comment="" dx1="786.6666666666667" dx2="786.6666666666667" dy="0.0"/>
+			<Connection Source="DigitalInput_I2.IND" Destination="AND_3.REQ" Comment="" dx1="786.6666666666667" dx2="786.6666666666667" dy="0.0"/>
+			<Connection Source="DigitalInput_I3.IND" Destination="AND_3.REQ" Comment="" dx1="786.6666666666667" dx2="786.6666666666667" dy="0.0"/>
 		</EventConnections>
+		<DataConnections>
+			<Connection Source="DigitalInput_I1.IN" Destination="AND_3.IN1" Comment="" dx1="1100.0" dx2="1100.0" dy="0.0"/>
+			<Connection Source="DigitalInput_I2.IN" Destination="AND_3.IN2" Comment="" dx1="1086.6666666666667" dx2="1086.6666666666667" dy="0.0"/>
+			<Connection Source="DigitalInput_I3.IN" Destination="AND_3.IN3" Comment="" dx1="1206.6666666666667" dx2="1206.6666666666667" dy="0.0"/>
+		</DataConnections>
 	</SubAppNetwork>
 </SubAppType>
