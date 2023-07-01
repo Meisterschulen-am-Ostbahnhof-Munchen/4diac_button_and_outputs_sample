@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SubAppType Name="Sample" Comment="Subapplication Type">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="Franz" Date="2023-02-17">
+	</VersionInfo>
+	<SubAppInterfaceList>
+		<SubAppEventInputs>
+			<SubAppEvent Name="INIT" Type="Event" Comment="">
+			</SubAppEvent>
+		</SubAppEventInputs>
+	</SubAppInterfaceList>
+	<SubAppNetwork>
+		<SubApp Name="mapping" Type="mapping" Comment="" x="0.0" y="-2533.3333333333335">
+			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+		</SubApp>
+		<EventConnections>
+			<Connection Source="INIT" Destination="mapping.INIT" Comment="" dx1="80.0"/>
+		</EventConnections>
+	</SubAppNetwork>
+</SubAppType>
